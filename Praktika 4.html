@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktika 4</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/praktika 4.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                Open Modal
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Edit</h4><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <label for="title" style="margin-left: 10px; font-weight: bold">Title:</label>
+                            <input type="text" id="title" placeholder="Task Entity" class="form-control">
+
+                            <label for="status" style="margin-left: 10px; font-weight: bold">Status</label>
+                            <input type="text" id="status" placeholder="OPEN" class="form-control">
+                            <img src="Rasmlar/arrow.png" alt="" style="width: 10px; height: 10px; position: relative; top: -33px; left: 450px">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

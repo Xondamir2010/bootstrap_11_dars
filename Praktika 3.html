@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktika 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/praktika 3.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                Open Modal
+            </button>
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Add Person</h4><span class="close" data-dismiss="modal">&times;</span>
+                        </div>
+                        <div class="modal-body text-right">
+                            <label for="firstName" style="margin-left: 100px; font-weight: bold">First Name</label>
+                            <input type="text" id="firstName" placeholder="First Name" style="width: 550px">
+
+                            <label for="lastName" style="margin-left: 100px; font-weight: bold">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Last Name" style="width: 550px">
+
+                            <label for="gender" style="margin-left: 100px; font-weight: bold">Gender</label>
+                            <input type="text" id="gender" placeholder="Male" style="width: 550px">
+
+                            <label for="address" style="margin-left: 100px; font-weight: bold; position: relative; top: -30px">Address</label>
+                            <textarea name="address" id="address" cols="72" placeholder="Address"></textarea>
+
+                            <label for="birth" style="margin-left: 100px; font-weight: bold">Date of Birth</label>
+                            <input type="text" id="birth" placeholder="yyyy-mm-dd" style="width: 550px">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jQuery.min.js"></script>
+<script src="js/src/popover.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
